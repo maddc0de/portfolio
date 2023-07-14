@@ -2,6 +2,8 @@ import React, { Suspense, UseEffect, useState } from 'react'
 import { Canvas } from '@react-three/fiber' // an empty canvas provided by the React renderer to work with 3d graphics and animation 
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei' // OC enables camera control, P optimises asset loading, useGLTF simplifies usage of 3D models in GLTF format
 
+import CanvasLoader from "../Loader";
+
 const Computer = () => {
   const computer = useGLTF('./desktop_pc/scene.gltf')
 
@@ -29,7 +31,7 @@ const ComputersCanvas = () => {
       camera={{ position: [20, 3, 5], fov: 25 }}    // xyz axis, field of view
       gl={{ preserveDrawingBuffer: true }}
     > 
-      <Suspense>
+      <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
