@@ -1,4 +1,5 @@
 import { styles } from '../styles'
+import { ComputersCanvas } from "./canvas";
 
 const Banner = () => {
   return (
@@ -19,6 +20,8 @@ const Banner = () => {
           </p>
         </div>
       </div>
+
+      <ComputersCanvas />
     </section>
   )
 }
