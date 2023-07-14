@@ -10,7 +10,13 @@ const Banner = () => {
         </div>
 
         <div>
-
+          <h1 className={`${styles.bannerHeadText} text-white`}>
+            Hi, I'm <span className="text-[#915eff]">Madelane</span>
+          </h1>
+          <p className={`${styles.bannerSubText} mt-2 text-white-100`}>
+            I love to build User-Centric Solutions <br className='sm:block hidden'/>
+            with Code and Design.
+          </p>
         </div>
       </div>
     </section>
