@@ -156,12 +156,12 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "bootstrap, css",
+        name: "bootstrap",
         color: "pink-text-gradient",
       },
     ],
     image: projectExample,
-    source_code_link: "https://github.com/",
+    sourceCodeLink: "https://github.com/maddc0de/foodshare",
   },
   {
     name: "Acebook",
@@ -177,12 +177,12 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "express",
         color: "pink-text-gradient",
       },
     ],
     image: projectExample,
-    source_code_link: "https://github.com/",
+    sourceCodeLink: "https://github.com/maddc0de/acebook",
   },
   {
     name: "Workout App",
@@ -203,7 +203,7 @@ const projects = [
       },
     ],
     image: projectExample,
-    source_code_link: "https://github.com/",
+    sourceCodeLink: "https://github.com/maddc0de/workout-app",
   },
 ];
 
