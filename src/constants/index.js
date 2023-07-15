@@ -3,18 +3,6 @@ import {
   backend,
   design,
   web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  shopify,
-  threejs,
   projectExample,
 } from "../assets";
 
@@ -50,95 +38,6 @@ const services = [
     title: "Design",
     icon: design,
   },
-];
-
-const technologies = [
-  {
-    name: "HTML",
-    icon: html,
-  },
-  {
-    name: "CSS",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  }
-];
-
-const experiences = [
-  {
-    title: "test_title",
-    company_name: "test_company",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Point number 1",
-      "Point number 2",
-      "Point number 3",
-      "Point number 4",
-    ],
-  },
-  {
-    title: "test_title",
-    company_name: "test_company",
-    icon: shopify,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Point number 1",
-      "Point number 2",
-      "Point number 3",
-      "Point number 4",
-    ],
-  },
-  {
-    title: "test_title",
-    company_name: "test_company",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Point number 1",
-      "Point number 2",
-      "Point number 3",
-      "Point number 4",
-    ],
-  }
 ];
 
 const projects = [
@@ -207,4 +106,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+export { services, projects };
