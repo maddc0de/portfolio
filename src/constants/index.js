@@ -1,8 +1,9 @@
 import {
-  mobile,
-  backend,
-  design,
   web,
+  backend,
+  frontend,
+  design,
+
   projectExample,
 } from "../assets";
 
@@ -28,7 +29,7 @@ const services = [
   },
   {
     title: "Frontend",
-    icon: mobile,
+    icon: frontend,
   },
   {
     title: "Backend",
