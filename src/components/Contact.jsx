@@ -1,18 +1,25 @@
 import React, { useRef, useState } from "react"
 import { motion } from "framer-motion"
-import emailjs from "@emailjs/browser"
+import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles"
 import { fadeIn } from "../utils/motion"
-import { EarthCanvas } from "./canvas"
 import { SectionWrapper } from "../hoc"
+
+// template_c10jgdx
+// service_pt9qzh1
+// 7LR5XqOxeGmPYTI8e
 
 const Contact = () => {
   const formRef = useRef() // accessing DOM elements without triggering re-renders
   const [form, setForm] = useState({ name: "", email: "", message: "" })
   const [loading, setLoading] = useState(false)
 
-  const handleInputChange = (e) => {}
+  const handleInputChange = (e) => {
+    const { name, value } = e.target
+
+    setForm({ ...form, [name]: value })
+  }
 
   const handleSubmit = (e) => {}
 
@@ -61,6 +68,10 @@ const Contact = () => {
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
+
+          <button type='submit' className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'>
+            {loading ? "Sending..." : "Send"}
+          </button>
         </form>
       </motion.div>
     </section>

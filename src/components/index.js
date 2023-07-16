@@ -1,4 +1,4 @@
-import { EarthCanvas, ComputersCanvas, StarsCanvas } from './canvas';
+import { ComputersCanvas, StarsCanvas } from './canvas';
 import Banner from './Banner';
 import Navbar from './Navbar';
 import About from './About';
@@ -11,7 +11,6 @@ export {
   About,
   Projects,
   Contact,
-  EarthCanvas,
   ComputersCanvas, 
   StarsCanvas
 }
