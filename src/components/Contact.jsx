@@ -6,9 +6,7 @@ import { styles } from "../styles"
 import { fadeIn } from "../utils/motion"
 import { SectionWrapper } from "../hoc"
 
-// template_c10jgdx
-// service_pt9qzh1
-// 7LR5XqOxeGmPYTI8e
+
 
 const Contact = () => {
   const formRef = useRef() // accessing DOM elements without triggering re-renders
@@ -21,7 +19,39 @@ const Contact = () => {
     setForm({ ...form, [name]: value })
   }
 
-  const handleSubmit = (e) => {}
+  const handleSubmit = (e) => {
+    e.preventDefault(); // prevents browser's default behaviour of refreshing page after submitting form
+    setLoading(true)
+
+    emailjs.send(
+      'service_pt9qzh1', 
+      'template_c10jgdx', 
+      {
+        from_name: form.name,
+        to_name: "Madelane",
+        from_email: form.email,
+        to_email: "maddc0de@outlook.com",
+        message: form.message,
+      },
+      '7LR5XqOxeGmPYTI8e'
+    ).then(() => {
+      setLoading(false)
+      alert("Thank you for reaching out! I will get back to you as soon as I can.")
+
+      setForm({
+        name: "",
+        email: "",
+        message: ""
+      })
+    },
+    (error) => {
+      setLoading(false);
+      console.error(error);
+
+      alert("Oops! something went wrong. Please try again.");
+    }
+    )
+  }
 
   return (
     <section className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`} >
