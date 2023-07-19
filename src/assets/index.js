@@ -7,9 +7,11 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import shopify from "./company/shopify.png";
-
-import projectExample from "./project-example.png";
+import exercisetrove from "./exercisetrove.gif";
+import foodshare from "./foodshare.gif";
+import acebook from "./acebook.gif";
+import chitter from "./chitter.gif";
+import designSystem from "./designSystem.gif";
 
 export {
   web,
@@ -20,6 +22,9 @@ export {
   github,
   menu,
   close,
-  shopify,
-  projectExample
+  exercisetrove,
+  foodshare,
+  acebook,
+  chitter,
+  designSystem
 };
