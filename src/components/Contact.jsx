@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 import { styles } from "../styles"
 import { fadeIn } from "../utils/motion"
 import { SectionWrapper } from "../hoc"
+import { github, linkedin } from "../assets"
 
 
 
@@ -54,13 +55,25 @@ const Contact = () => {
   }
 
   return (
-    <section className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`} >
+    <section className={`xl:mt-12 flex xl:flex-row gap-10 overflow-hidden`} >
       <motion.div 
         variants={fadeIn("down", "spring", 0.2, 0.75)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
-      >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact</h3>
+      > 
+        <div className='flex justify-between items-center'>
+          <div>
+            <p className={styles.sectionSubText}>Get in touch</p>
+            <h3 className={styles.sectionHeadText}>Contact</h3>
+          </div>
+          <div className="flex gap-2">
+            <a href='https://github.com/maddc0de/' target='_blank' rel='noopener noreferrer' className='hover:scale-110 transform transition-transform duration-300'>
+              <img src={github} alt='linkedin' className='w-12' />
+            </a>
+            <a href='https://www.linkedin.com/in/madelanedaz/' target='_blank' rel='noopener noreferrer'  className='hover:scale-110 transform transition-transform duration-300'>
+              <img src={linkedin} alt='linkedin' className='w-12 h-12' />
+            </a>
+          </div>
+        </div>
 
         <form ref={formRef} onSubmit={handleSubmit} className='flex flex-col mt-12 gap-8'>
           <label className='flex flex-col'>

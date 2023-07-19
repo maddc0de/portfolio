@@ -4,6 +4,7 @@ import frontend from "./frontend.png";
 import design from "./design.png";
 import logo from "./logo.svg";
 import github from "./github.png";
+import linkedin from "./linkedin.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -20,6 +21,7 @@ export {
   design,
   logo,
   github,
+  linkedin,
   menu,
   close,
   exercisetrove,
