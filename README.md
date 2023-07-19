@@ -1,6 +1,6 @@
 # MY PORTFOLIO
 
-View the portfolio [here](madelane.netlify.app)
+View the portfolio [here](https://madelane.netlify.app/)
 
 ## Technologies
 
