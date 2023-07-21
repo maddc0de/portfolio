@@ -2,6 +2,8 @@
 
 View the portfolio [here](https://madelane.netlify.app/)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/91365bfb-e71d-4d9f-89d5-be8540de7780/deploy-status)](https://app.netlify.com/sites/madelane/deploys)
+
 ## Technologies
 
 * [React](https://react.dev/) - to build user interface and manage state of application
