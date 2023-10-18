@@ -3,7 +3,7 @@ import {
   backend,
   frontend,
   design,
-
+  plp,
   exercisetrove,
   foodshare,
   acebook,
@@ -47,6 +47,31 @@ const services = [
 
 const projects = [
   {
+    name: "Product Listing Page",
+    description:
+      "A responsive web application for product listings, featuring filtering and sorting options for user convenience",
+    tags: [
+      {
+        name: "vuejs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "json",
+        color: "blue-text-gradient",
+      }
+    ],
+    gif: plp,
+    sourceCodeLink: "https://github.com/maddc0de/product-listing-page-vue",
+  },
+  {
     name: "Exercise Trove",
     description:
       "Web application that gives a user access to a vast collection of exercises through API integration. Each exercise has information about target muscle, body part and what equipment needed with a GIF that shows how to perform the exercise.",
@@ -66,7 +91,7 @@ const projects = [
       {
         name: "javascript",
         color: "blue-text-gradient",
-      },
+      }
     ],
     gif: exercisetrove,
     sourceCodeLink: "https://github.com/maddc0de/exercise-trove",

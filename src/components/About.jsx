@@ -39,9 +39,9 @@ const About = () => {
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        I'm a Junior Software Engineer with a strong foundation in JavaScript and Ruby, 
-        and a knack for developing user-friendly and visually appealing software solutions. 
-        I love learning and have recently completed <span>
+        I'm an enthusiastic individual with a strong foundation in Software Development 
+        and a talent for creating user-friendly and visually appealing web applications. 
+        I am dedicated to cotinuous learning and have recently completed <span>
           <a 
             href="https://github.com/maddc0de/learning-journey-at-makers/blob/main/README.md" 
             className={`${styles.sectionHyperlinkText}`}
@@ -49,10 +49,10 @@ const About = () => {
             Makers' Bootcamp
           </a>
         </span>
-        , where I expanded my programming skills. Drawing from my background in Interior Architecture and Design, 
-        I bring a unique perspective that combines user-centric thinking with technical expertise.
+        , where I expanded my programming skills. Drawing from my background in Interior Architecture and Industrial Digitalisation, 
+        I bring a fresh perspective that combines user-centric thinking with technical expertise.
         I'm excited to continue my journey in the tech field, collaborating with teams to develop
-        software that combines practicality with a touch of style. Let's create something amazing together!
+        software that seamlessly blend practicality with great user experience!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

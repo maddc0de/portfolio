@@ -8,6 +8,7 @@ import linkedin from "./linkedin.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import plp from "./plp.gif";
 import exercisetrove from "./exercisetrove.gif";
 import foodshare from "./foodshare.gif";
 import acebook from "./acebook.gif";
@@ -24,6 +25,7 @@ export {
   linkedin,
   menu,
   close,
+  plp,
   exercisetrove,
   foodshare,
   acebook,
