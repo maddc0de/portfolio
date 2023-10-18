@@ -41,7 +41,7 @@ const About = () => {
       <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
         I'm an enthusiastic individual with a strong foundation in Software Development 
         and a talent for creating user-friendly and visually appealing web applications. 
-        I am dedicated to cotinuous learning and have recently completed <span>
+        I am dedicated to continuous learning and have recently completed <span>
           <a 
             href="https://github.com/maddc0de/learning-journey-at-makers/blob/main/README.md" 
             className={`${styles.sectionHyperlinkText}`}
